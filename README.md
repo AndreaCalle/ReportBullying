@@ -26,4 +26,34 @@ Resources class(locationName,address,phone,email)
 UserInfo class(user#,fname,lname,age,gender)
 botquestion(description,id#)
 
+more description : 
+
+Prevent Cyber Bullying
+About
+The use of the Internet, social networking sites, websites, email, text messaging to intimidate or harass others.
+
+Affects children and adolescents everywhere they are, 24/7. From their schools to their homes.
+
+Impacts
+Those Who are Bullied
+Depression, social anxiety, stress related health issues, very low self-esteem, problems in school, attitudes will become aggressive, and contemplating, attempting or committing suicide.
+
+Those Who Bully Others
+Have misconceptions of what is right and wrong, turning to substance abuse, academic problems, increasing dropout rates at schools, sexual harassment of others, gang involvement and criminal activities, etc.
+
+Legal Issues
+Some forms of bullying can be considered illegal and based on the information given to the police, an investigation can be done and charges can be applied to the bullies.
+
+Criminal Harassment
+Bothering the person online with text messages, phone calls, emails, messages from social networking sites, until the person starts to fear for their safety.
+
+Threats and Extortion
+Blackmailing the person to do what they want you to do, and if it's not done, they will release personal information or images online.
+
+Assault
+Acts of non-consensual violence, bodily harm, or destruction of personal property.
+
+Defamatory Libel
+Occurs when someone spreads false rumours.
+
 
