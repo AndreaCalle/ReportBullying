@@ -1,0 +1,108 @@
+<html>
+<head>
+  <title>Cyber Bullying</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="cyber.css">
+  <style>
+  			#map {
+			width: 100% ;
+			height: 500px;
+		}
+  </style>
+  <script>
+	var c = function(pos) {
+		var lat = pos.coords.latitude,
+		long = pos.coords.longitude,
+		coords = lat + ',' + long;
+		document.getElementById('google_map').setAttribute('src', 'https://maps.google.ca/?q='+ coords +'&z=15&output=embed');
+	}
+
+
+//		document.getElementById('getloc').onclick = function() {
+//			navigator.geolocation.getCurrentPosition(c);
+//			return false;
+//		}
+
+function getLocation() {
+	navigator.geolocation.getCurrentPosition(c);
+	return false;
+}
+
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+      	<img src="bully.jpg" alt="logo" style="width:40px;">
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="./cyberMain.php">Home</a></li>
+      <li><a href="resources.html">Resources</a></li>
+	  <li><a href="report.html">Report Cyber Bullying</a></li>
+	  <li><a href="aboutUs.html">About Us</a></li>
+	</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+		<li><a href="#">Non-Account User</a></li>
+		<li><a href="#">Sign In</a></li>
+		<li><a class="register" href="register.html">Register</a></li>
+    </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+	<h1 id="On location reasources "</h1>
+		<div id="map">
+		</div>
+		<script>
+			function checkValid() {
+
+			}
+
+			var marker;
+			var currentltlng;
+
+
+			function initMap() {
+				var tdot = {lat: 43.6532, lng: -79.3832};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 15,
+					center: tdot
+				});
+
+				marker = new google.maps.Marker({
+					map: map
+				});
+
+				map.addListener('click', function(event) {
+					marker.setPosition(event.latLng);
+					currentltlng = event.latLng;
+					map.panTo(event.latLng);
+					document.getElementById('lon').value = currentltlng.lng();
+					document.getElementById('lat').value = currentltlng.lat();
+				});
+			}
+		</script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHF04UV05WaRDlmHv0BInfzIrS5sISR-E&callback=initMap">
+	</script>
+	
+
+</div>
+
+<iframe
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/646fe36d-8d6e-4694-abc8-75cfe2aeaa3c">
+</iframe>
+
+</body>
+</html>
