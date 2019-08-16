@@ -1,3 +1,8 @@
+//create a javascript that will display a page that need a titile 
+//1. create a login 
+//2. connect to a db sys ..mongo or aws
+//3. make a go location 
+
 console.log('starting app.js');
 //requre will load in modules, 3 ways to use require
 const fs = require('fs'); //1. store the module result into variable fs
