@@ -1,7 +1,9 @@
 //create a javascript that will display a page that need a titile 
 //1. create a login 
 //2. connect to a db sys ..mongo or aws
-//3. make a go location 
+//3. make a google location 
+//4. search up self help
+//5. try to use react 
 
 console.log('starting app.js');
 //requre will load in modules, 3 ways to use require
